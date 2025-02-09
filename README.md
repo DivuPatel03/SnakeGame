@@ -18,10 +18,6 @@ This game utilizes basic data structures for game logic:
 - **Boolean Flags (`gameOver`, `gameStarted`, `showStartScreen`)**: Used for tracking the game state and controlling the flow of execution.
 - **Integer Variables (`x`, `y`, `fruitX`, `fruitY`, `score`, `nTail`)**: Maintain the positions of the snake and fruit, along with the player's score and the snake's length.
 
-## Possible Improvements
-- **Linked List for Snake Body**: Instead of arrays, using a linked list would improve efficiency in handling dynamic growth of the snake's body.
-- **Queue for Movement Buffering**: A queue could be used to maintain smooth movement by storing multiple inputs.
-
 ## Controls
 ```
 W - Move Up
