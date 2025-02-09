@@ -26,7 +26,11 @@ void Setup() {
     fruitX = rand() % (width - 2) + 1;
     fruitY = rand() % (height - 2) + 1;
     score = 0;
-    nTail = 0;
+    nTail = 2;
+    for (int i = 0; i < nTail; i++) {
+        tailX[i] = x - (i + 1);
+        tailY[i] = y;
+    }
 }
 
 void HideCursor() {
@@ -71,7 +75,7 @@ void Draw() {
             else if (i == y && j == x)
                 cout << "O";
             else if (i == fruitY && j == fruitX)
-                cout << "F";
+                cout << "+";
             else {
                 bool printTail = false;
                 for (int k = 0; k < nTail; k++) {
