@@ -3,7 +3,7 @@
 #include<windows.h>
 using namespace std;
 
-const int width = 40;    
+const int width = 60;    
 const int height = 25;   
 
 int x, y;                    
@@ -218,7 +218,7 @@ int main() {
                 Draw();
                 Input();
                 Logic();
-                Sleep(60);
+                Sleep(40);
             }
         }
 
