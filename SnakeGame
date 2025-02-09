@@ -27,10 +27,11 @@ void Setup() {
     fruitY = rand() % (height - 2) + 1;
     score = 0;
     nTail = 2;
-    for (int i = 0; i < nTail; i++) {
-        tailX[i] = x - (i + 1);
-        tailY[i] = y;
-    }
+    
+    tailX[0] = x - 1;
+    tailY[0] = y;
+    tailX[1] = x - 2;
+    tailY[1] = y;
 }
 
 void HideCursor() {
@@ -217,7 +218,7 @@ int main() {
                 Draw();
                 Input();
                 Logic();
-                Sleep(100);
+                Sleep(60);
             }
         }
 
