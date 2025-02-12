@@ -36,11 +36,11 @@ R - Restart the Game (after Game Over)
 ## Compilation Instructions
 Using g++:
 ```sh
-g++ snake_game.cpp -o snake_game.exe
+g++ DivuSnakeGame.cpp -o snake_game.exe
 ```
 Run the executable:
 ```sh
-./snake_game.exe
+./DivuSnakeGame.exe
 ```
 
 ## Game Logic
